@@ -1,12 +1,11 @@
 {
   "name": "teacherapi",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
     "client-install": "npm install --prefix client",
-    "dev": "nodemon app",
+    "start": "nodemon app",
     "client": "npm start --prefix client",
-    "start": "concurrently \"npm start\" \"npm run client\""
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
