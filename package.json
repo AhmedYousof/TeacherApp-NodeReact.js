@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "client-install": "npm install --prefix client",
-    "dev": "nodemon app",
+    "start": "nodemon app",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "client": "npm start --prefix client",
-    "start": "concurrently \"npm start\" \"npm run client\""
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
@@ -28,4 +29,8 @@
     "validator": "^12.2.0",
     "nodemon": "^2.0.2"
   }
+   "engines": {
+        "node": "14.0.0",
+        "npm": "6.14.4"
+    }
 }
