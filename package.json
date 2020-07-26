@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "nodemon app",
+    "dev": "nodemon app",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm start\" \"npm run client\""
+    "start": "concurrently \"npm start\" \"npm run client\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
