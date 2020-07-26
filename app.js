@@ -28,13 +28,12 @@ require("./config/passport")(passport);
 
 //DB connection
 mongoose
-  .connect("mongodb://localhost:27017/teacherapi", {
+  .connect("mongodb://user:password1@ds123919.mlab.com:23919/teacherapp", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then(() => console.log("DB Connected"))
   .catch((err) => console.log(err));
-  
 const port = process.env.PORT || 5000;
 
 app.listen(port, () => console.log(`Server running on port ${port}`));
